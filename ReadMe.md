@@ -1,5 +1,5 @@
 # Preview Video
-[![Watch the video](https://img.youtube.com/vi/zwEJeM8ExRc/hqdefault.jpg)]([https://www.youtube.com/embed/APOPm01BVrk](https://www.youtube.com/watch?v=zwEJeM8ExRc))
+[![Watch the video](https://img.youtube.com/vi/zwEJeM8ExRc/hqdefault.jpg)](https://www.youtube.com/watch?v=zwEJeM8ExRc))
 # Attendance System
 
 This project is part of the practical assessment for the Software Engineer Internship, built with React and Bootstrap for the frontend, and Express with JWT authentication for the backend.
