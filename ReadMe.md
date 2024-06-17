@@ -1,5 +1,5 @@
 # Preview Video
-[![Watch the video]](https://www.youtube.com/embed/APOPm01BVrk)
+[![Watch the video](https://github.com/reyanson/attendance-system/blob/14171080106dbe75986cd60b383f2f258c6e3337/docs/1.Login%20page.png)](https://www.youtube.com/embed/APOPm01BVrk)
 # Attendance System
 
 This project is part of the practical assessment for the Software Engineer Internship, built with React and Bootstrap for the frontend, and Express with JWT authentication for the backend.
