@@ -10,17 +10,7 @@ const Home = () => {
     const navigate = useNavigate()
 
     axios.defaults.withCredentials = true;
-    useEffect(() => {
-        axios.get("http://localhost:3001/home")
-            .then(res => {
-                if (res.data.valid) {
-                    setMessage(res.data.message)
-                } else {
-                    navigate("/")
-                }
-            })
-            .catch(err => console.log(err))
-    }, [])
+    
 
     const handleLogout = () => {
         axios.post("http://localhost:3001/logout")
