@@ -9,11 +9,12 @@ const Login = () =>{
     const navigate = useNavigate();
     const [username, setUsername] = useState("")
     const [password, setPassword] = useState("")
+    
 
-
+    axios.defaults.withCredentials = true;
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:3001/login', { username, password }, { withCredentials: true })
+        axios.post('http://localhost:3001/login', { username, password })
             .then(result => {
                 if (result.data === "Login Successfull") {
                     Swal.fire({

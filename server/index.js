@@ -9,7 +9,7 @@ const app = express()
 
 //Enable CORS with specific origin and credentials
 app.use(cors({
-    origin:[""],
+    origin:["http://localhost:5173"],
     credentials: true
 }))
 
@@ -41,7 +41,7 @@ app.post("/login",(req,res) =>{
                 res.cookie('accessToken', accessToken, { maxAge: 60000});
                 res.cookie('refreshToken', refreshToken, { maxAge: 300000, httpOnly:true, sameSite: 'strict'});
 
-                res.json("Login Sucessfull");
+                res.json("Login Successfull");
             }else{
                 res.json("Incorrect Password");
             }
