@@ -11,7 +11,14 @@ const Login = () =>{
     const [password, setPassword] = useState("")
 
     axios.defaults.withCredentials = true;
-    
+    useEffect(() =>{
+        axios.get("http://localhost:3001/home")
+            .then(res =>{
+                if(res.data.valid){
+                    navigate("/home")
+                }
+            })
+    },[]);
     
     const handleSubmit = (e) => {
         e.preventDefault();
