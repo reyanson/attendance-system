@@ -61,9 +61,13 @@ const Login = () =>{
 
 
     return(
-        <div className='d-flex justify-content-center align-items-center bg-primary vh-100'>
-            <div className='bg-white p-3 rounded w-25'>
-                <h2>Login</h2>
+        <>
+        
+        <div className=' justify-content-center align-items-center bg-primary vh-100'>
+        <img src="https://raw.githubusercontent.com/reyanson/Stopwatch-Application/main/logo.svg" width="200" height="200" alt="github"/>
+        <div className=" d-flex justify-content-center align-items-center">
+            <div className=' bg-white p-3 rounded w-25'>
+                <center><h2>Login</h2></center>
                 <form onSubmit={handleSubmit}>
                     <div className='mb-3'>
                         <label htmlFor='username'><strong>Username</strong></label>
@@ -92,8 +96,15 @@ const Login = () =>{
                     <button type='submit' className='btn btn-success w-100'>Log in</button>
                 </form>
             </div>
+            </div>
+            <div className="develop">
+            <p>Developed By Reyanson Sosai</p>
+        <center><a href="https://github.com/reyanson"><img src="https://github.com/reyanson/QRcode-generator/raw/main/github-mark-white.svg" width="50" height="50" alt="github"/></a></center>
+            </div>
+            
 
         </div>
+        </>
     );
 
 }

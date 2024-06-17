@@ -1,0 +1,10 @@
+.develop {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .develop p{
+    text-align: center;
+  }
+  
