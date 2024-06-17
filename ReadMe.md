@@ -8,17 +8,11 @@ This backend system is built on Express, utilizing Node.js. Authentication and a
 
 ## Table of Content
 
- - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
- - [Awesome README](https://github.com/matiassingers/awesome-readme)
- - [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
-
- - Project Structure
- - Technologies Used
- - Setup and Installation
- - Usage
- - API Endpoints
- - Login Credentials
- - Screenshots
+ - [Tech Stack]([https://github.com/reyanson/attendance-system?tab=readme-ov-file#tech-stack])
+ - [Setup and Installation]([https://github.com/reyanson/attendance-system?tab=readme-ov-file#setup-and-installation])
+ - [Usage]([https://github.com/reyanson/attendance-system?tab=readme-ov-file#usage])
+ - [Features]([https://github.com/reyanson/attendance-system?tab=readme-ov-file#features])
+ - [Screenshots]([https://github.com/reyanson/attendance-system?tab=readme-ov-file#screenshots])
 
 
 ## Tech Stack
