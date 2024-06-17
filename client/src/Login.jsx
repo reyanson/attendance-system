@@ -6,6 +6,48 @@ import Swal from 'sweetalert2/dist/sweetalert2.js'
 import 'sweetalert2/src/sweetalert2.scss'
 
 const Login = () =>{
+    const navigate = useNavigate();
+    const [username, setUsername] = useState("")
+    const [password, setPassword] = useState("")
+
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        axios.post('http://localhost:3001/login', { username, password }, { withCredentials: true })
+            .then(result => {
+                if (result.data === "Login Successfull") {
+                    Swal.fire({
+                        position: "center",
+                        icon: "success",
+                        title: "Login Successfull",
+                        showConfirmButton: false,
+                        timer: 1500
+                    }).then(() => {
+                        navigate('/home');
+                    });
+                } else {
+                    Swal.fire({
+                        position: "center",
+                        icon: "error",
+                        title: "Oops...",
+                        text: result.data,
+                        showConfirmButton: false,
+                        timer: 2000
+                    });
+                }
+            })
+            .catch(err => {
+                console.error(err);
+                Swal.fire({
+                    position: "center",
+                    icon: "error",
+                    title: "An error occurred",
+                    text: "Please try again",
+                    showConfirmButton: false,
+                    timer: 2000
+                });
+            });
+    }
 
 
 
@@ -13,14 +55,15 @@ const Login = () =>{
         <div className='d-flex justify-content-center align-items-center bg-primary vh-100'>
             <div className='bg-white p-3 rounded w-25'>
                 <h2>Login</h2>
-                <form >
+                <form onSubmit={handleSubmit}>
                     <div className='mb-3'>
-                        <label htmlFor='email'><strong>Username</strong></label>
+                        <label htmlFor='username'><strong>Username</strong></label>
                         <input
                             type='email'
                             placeholder='Enter Username'
                             autoComplete='off'
-                            name='email'
+                            name='username'
+                            onChange={(e) => setUsername(e.target.value)}
                             className='form-control rounded'
                             required
                         />
@@ -32,6 +75,7 @@ const Login = () =>{
                             placeholder='Enter Password'
                             autoComplete='off'
                             name='password'
+                            onChange={(e) => setPassword(e.target.value)}
                             className='form-control rounded'
                             required
                         />
