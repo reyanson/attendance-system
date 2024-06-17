@@ -52,5 +52,9 @@ app.post("/login",(req,res) =>{
         //user is already logged in , redirect to home page
     }
 
-})
+});
 
+//start the express server
+app.listen(3001,() =>{
+    console.log("Server is running on port 3001...")
+});
